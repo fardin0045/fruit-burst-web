@@ -212,19 +212,51 @@
                       <p class="text-gray-500 pb-4">Apples</p>
                       <div class="rating pb-5">
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                       
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         <input
                         type="radio"
                         name="rating-2"
                         class="mask mask-star-2 bg-orange-400"
                         checked="checked" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        
                       </div>
-                      <div class="card-actions justify-center">
-                        <button class=" font-semibold border-0 text-orange-600 pb-5">Details</button>
-                      </div>
+                      <!-- details part -->
+                        <button class=" font-semibold border-0 text-orange-600 pb-5" onclick="my_modal_3.showModal()">Details</button>
+                        <dialog id="my_modal_3" class="modal">
+                          <div class="modal-box">
+                            <form method="dialog">
+                              <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                            </form>
+                            <figure>
+                              <img
+                                src="images/fruit6.png"
+                                alt="Shoes" />
+                            </figure>
+                            <div class="card-body text-center items-center  ">
+                              <h2 class="card-title border-b-2 pb-8">12.90$ - 18.85$</h2>
+                              <p class="text-gray-500 pb-4">Apples</p>
+                              <div class="rating pb-5">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 bg-orange-400"
+                                checked="checked" />
+                              </div>
+                              <div class="flex justify-around ml-5 ">
+                                <button class=" border-2 border-red-500 px-3 py-1 text-orange-500 ml-5 rounded-xl">Close</button>
+                                <button class="btn bg-[#F85559] border-0 px-3 py-1 text-white ml-5">Shop Now</button>
+                                
+                              </div>
+                            
+                          </div>
+                        </dialog>
                     </div>
                 </div>
                 <!--card 2-->
@@ -251,7 +283,40 @@
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                       </div>
                       <div class="card-actions justify-center">
-                        <button class=" font-semibold border-0 text-orange-600 pb-5">Details</button>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="text-orange-600 font-bold" onclick="my_modal_1.showModal()">Details</button>
+                        <dialog id="my_modal_1" class="modal">
+                          <div class="modal-box">
+                            <figure>
+                              <img
+                                src="images/fruit7.png"
+                                alt="Shoes" />
+                            </figure>
+                            <div class="card-body text-center items-center  ">
+                              <h2 class="card-title border-b-2 pb-8">12.90$ - 18.85$</h2>
+        
+                              <p class="text-gray-500 pb-4">Orange</p>
+                              <div class="rating pb-5">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                               
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 bg-orange-400"
+                                checked="checked" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                            <div class="modal-action">
+                              <form method="dialog">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn  border-2 border-red-500 px-3 py-1 text-orange-500 ml-5 rounded-xl">Close</button>
+                                <button class="btn bg-[#F85559] border-0 px-3 py-1 text-white ml-5">Shop Now</button>
+                              </form>
+                            </div>
+                          </div>
+                        </dialog> 
                       </div>
                     </div>
                 </div>
@@ -281,6 +346,7 @@
                       </div>
                       <div class="card-actions justify-center">
                         <button class=" font-semibold border-0 text-orange-600 pb-5">Details</button>
+                        
                       </div>
                     </div>
                 </div>
@@ -317,6 +383,7 @@
             <div class="card-actions mt-10 justify-center">
                 <button class=" font-semibold border-0 bg-[#F85559] text-white px-8 py-4 rounded-xl">Shop All</button>
               </div>
+              
         </section>
         <!--Team section-->
         <section class="my-24">
